@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.3 on win32)" generated="20190713 21:30:53.780" rpa="false">
+<suite id="s1" name="TestCases" source="C:\Users\chirag\PycharmProjects\RobotFramework\TestCases">
+<kw name="Before each Test Suite" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Suite Started</arg>
+</arguments>
+<msg timestamp="20190713 21:30:53.932" level="INFO">Test Suite Started</msg>
+<status status="PASS" starttime="20190713 21:30:53.930" endtime="20190713 21:30:53.933"></status>
+</kw>
+<status status="PASS" starttime="20190713 21:30:53.928" endtime="20190713 21:30:53.933"></status>
+</kw>
+<suite id="s1-s1" name="TC 001 Start Close Browser" source="C:\Users\chirag\PycharmProjects\RobotFramework\TestCases\TC_001_Start_Close_Browser.robot">
+<test id="s1-s1-t1" name="TC_001 Robot First Test Case">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20190713 21:30:55.878" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20190713 21:30:55.877" endtime="20190713 21:31:02.795"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190713 21:31:02.796" endtime="20190713 21:31:03.951"></status>
+</kw>
+<kw name="Enter Username Email Passowrd">
+<arguments>
+<arg>khurana</arg>
+<arg>abc@gmail.com</arg>
+<arg>test1234</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190713 21:31:03.951" level="INFO">Typing text 'khurana' into text field 'name:fld_username'.</msg>
+<status status="PASS" starttime="20190713 21:31:03.951" endtime="20190713 21:31:04.433"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20190713 21:31:04.435" level="INFO">Typing text 'abc@gmail.com' into text field 'name:fld_email'.</msg>
+<status status="PASS" starttime="20190713 21:31:04.434" endtime="20190713 21:31:04.903"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@name='fld_password']</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190713 21:31:04.905" level="INFO">Typing text 'test1234' into text field 'xpath://input[@name='fld_password']'.</msg>
+<status status="PASS" starttime="20190713 21:31:04.904" endtime="20190713 21:31:05.247"></status>
+</kw>
+<status status="PASS" starttime="20190713 21:31:03.951" endtime="20190713 21:31:05.248"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>add_type</arg>
+<arg>office</arg>
+</arguments>
+<msg timestamp="20190713 21:31:05.251" level="INFO">Selecting 'office' from radio button 'add_type'.</msg>
+<status status="PASS" starttime="20190713 21:31:05.250" endtime="20190713 21:31:05.433"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>name:sex</arg>
+<arg>Female</arg>
+</arguments>
+<msg timestamp="20190713 21:31:05.435" level="INFO">Selecting options from selection list 'name:sex' by label Female.</msg>
+<status status="PASS" starttime="20190713 21:31:05.435" endtime="20190713 21:31:05.666"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>name:terms</arg>
+</arguments>
+<msg timestamp="20190713 21:31:05.668" level="INFO">Selecting checkbox 'name:terms'.</msg>
+<status status="PASS" starttime="20190713 21:31:05.667" endtime="20190713 21:31:05.834"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@type='Sign up']</arg>
+</arguments>
+<msg timestamp="20190713 21:31:05.837" level="INFO">Clicking button 'xpath://input[@type='Sign up']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190713 21:31:06.581" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190713 21:31:05.909" endtime="20190713 21:31:06.581"></status>
+</kw>
+<msg timestamp="20190713 21:31:06.581" level="FAIL">Button with locator 'xpath://input[@type='Sign up']' not found.</msg>
+<status status="FAIL" starttime="20190713 21:31:05.836" endtime="20190713 21:31:06.597"></status>
+</kw>
+<status status="FAIL" starttime="20190713 21:30:55.875" endtime="20190713 21:31:06.597" critical="yes">Button with locator 'xpath://input[@type='Sign up']' not found.</status>
+</test>
+<status status="FAIL" starttime="20190713 21:30:53.933" endtime="20190713 21:31:06.597"></status>
+</suite>
+<suite id="s1-s2" name="TC 002 UDKWithoutArgument" source="C:\Users\chirag\PycharmProjects\RobotFramework\TestCases\TC_002_UDKWithoutArgument.robot">
+<test id="s1-s2-t1" name="TC_002 Robot Second Test Case">
+<kw name="Start Browser and Maximize" library="UserDefinedKeywordsWithoutArgument">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20190713 21:31:06.628" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20190713 21:31:06.628" endtime="20190713 21:31:14.044"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190713 21:31:14.044" endtime="20190713 21:31:15.206"></status>
+</kw>
+<status status="PASS" starttime="20190713 21:31:06.628" endtime="20190713 21:31:15.207"></status>
+</kw>
+<kw name="Enter Username Email Passowrd">
+<arguments>
+<arg>khurana</arg>
+<arg>abc@gmail.com</arg>
+<arg>test1234</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190713 21:31:15.210" level="INFO">Typing text 'khurana' into text field 'name:fld_username'.</msg>
+<status status="PASS" starttime="20190713 21:31:15.209" endtime="20190713 21:31:15.612"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20190713 21:31:15.614" level="INFO">Typing text 'abc@gmail.com' into text field 'name:fld_email'.</msg>
+<status status="PASS" starttime="20190713 21:31:15.613" endtime="20190713 21:31:16.075"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@name='fld_password']</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190713 21:31:16.076" level="INFO">Typing text 'test1234' into text field 'xpath://input[@name='fld_password']'.</msg>
+<status status="PASS" starttime="20190713 21:31:16.075" endtime="20190713 21:31:16.379"></status>
+</kw>
+<status status="PASS" starttime="20190713 21:31:15.208" endtime="20190713 21:31:16.379"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>add_type</arg>
+<arg>office</arg>
+</arguments>
+<msg timestamp="20190713 21:31:16.381" level="INFO">Selecting 'office' from radio button 'add_type'.</msg>
+<status status="PASS" starttime="20190713 21:31:16.380" endtime="20190713 21:31:16.555"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>name:sex</arg>
+<arg>Female</arg>
+</arguments>
+<msg timestamp="20190713 21:31:16.557" level="INFO">Selecting options from selection list 'name:sex' by label Female.</msg>
+<status status="PASS" starttime="20190713 21:31:16.556" endtime="20190713 21:31:16.810"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>name:terms</arg>
+</arguments>
+<msg timestamp="20190713 21:31:16.812" level="INFO">Selecting checkbox 'name:terms'.</msg>
+<status status="PASS" starttime="20190713 21:31:16.811" endtime="20190713 21:31:17.063"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@type='Sign up']</arg>
+</arguments>
+<msg timestamp="20190713 21:31:17.065" level="INFO">Clicking button 'xpath://input[@type='Sign up']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190713 21:31:18.185" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190713 21:31:17.124" endtime="20190713 21:31:18.186"></status>
+</kw>
+<msg timestamp="20190713 21:31:18.188" level="FAIL">Button with locator 'xpath://input[@type='Sign up']' not found.</msg>
+<status status="FAIL" starttime="20190713 21:31:17.064" endtime="20190713 21:31:18.189"></status>
+</kw>
+<status status="FAIL" starttime="20190713 21:31:06.628" endtime="20190713 21:31:18.198" critical="yes">Button with locator 'xpath://input[@type='Sign up']' not found.</status>
+</test>
+<status status="FAIL" starttime="20190713 21:31:06.613" endtime="20190713 21:31:18.203"></status>
+</suite>
+<suite id="s1-s3" name="TC 003 UDKWithArgument" source="C:\Users\chirag\PycharmProjects\RobotFramework\TestCases\TC_003_UDKWithArgument.robot">
+<test id="s1-s3-t1" name="TC_003 Robot Third Test Case">
+<kw name="Start Browser and Maximize" library="UserDefinedKeywordWithArgument">
+<arguments>
+<arg>https://www.facebook.com</arg>
+<arg>Chrome</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${UserURL}</arg>
+<arg>${InputBrowser}</arg>
+</arguments>
+<msg timestamp="20190713 21:31:18.281" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com'.</msg>
+<status status="PASS" starttime="20190713 21:31:18.279" endtime="20190713 21:31:30.687"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190713 21:31:30.687" endtime="20190713 21:31:31.875"></status>
+</kw>
+<status status="PASS" starttime="20190713 21:31:18.278" endtime="20190713 21:31:31.875"></status>
+</kw>
+<tags>
+<tag>All_TC</tag>
+<tag>Regression</tag>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" starttime="20190713 21:31:18.274" endtime="20190713 21:31:31.876" critical="yes"></status>
+</test>
+<test id="s1-s3-t2" name="Robot next test Case">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190713 21:31:31.893" level="FAIL">Variable '${username}' not found.</msg>
+<status status="FAIL" starttime="20190713 21:31:31.889" endtime="20190713 21:31:31.894"></status>
+</kw>
+<tags>
+<tag>All_TC</tag>
+<tag>Sanity</tag>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" starttime="20190713 21:31:31.885" endtime="20190713 21:31:31.895" critical="yes">Variable '${username}' not found.</status>
+</test>
+<test id="s1-s3-t3" name="Robot third test case">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190713 21:31:31.936" level="FAIL">Variable '${username}' not found.</msg>
+<status status="FAIL" starttime="20190713 21:31:31.928" endtime="20190713 21:31:31.936"></status>
+</kw>
+<tags>
+<tag>All_TC</tag>
+<tag>DFLT</tag>
+</tags>
+<status status="FAIL" starttime="20190713 21:31:31.922" endtime="20190713 21:31:31.938" critical="yes">Variable '${username}' not found.</status>
+</test>
+<status status="FAIL" starttime="20190713 21:31:18.240" endtime="20190713 21:31:31.943"></status>
+</suite>
+<suite id="s1-s4" name="TC 004 UDKWithArgument ReturnValue" source="C:\Users\chirag\PycharmProjects\RobotFramework\TestCases\TC_004_UDKWithArgument_ReturnValue.robot">
+<test id="s1-s4-t1" name="TC_004 Robot Fourth Test Case">
+<kw name="Start Browser and Maximize" library="UserDefinedWithArgument_ReturnValue">
+<doc>This user defined keyword is to open the browser and then maximize it with return of title value</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<assign>
+<var>${Res}</var>
+</assign>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${UserURL}</arg>
+<arg>${InputBrowser}</arg>
+</arguments>
+<msg timestamp="20190713 21:31:32.014" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20190713 21:31:32.009" endtime="20190713 21:31:42.287"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190713 21:31:42.287" endtime="20190713 21:31:43.571"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${Title}</var>
+</assign>
+<msg timestamp="20190713 21:31:43.614" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20190713 21:31:43.571" endtime="20190713 21:31:43.615"></status>
+</kw>
+<msg timestamp="20190713 21:31:43.616" level="INFO">${Res} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20190713 21:31:32.008" endtime="20190713 21:31:43.616"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Res}</arg>
+</arguments>
+<msg timestamp="20190713 21:31:43.641" level="INFO">Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20190713 21:31:43.628" endtime="20190713 21:31:43.642"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+<arg>${Res}</arg>
+</arguments>
+<msg timestamp="20190713 21:31:43.646" level="INFO">Typing text 'Login &amp; Sign Up Forms' into text field 'name:fld_username'.</msg>
+<status status="PASS" starttime="20190713 21:31:43.643" endtime="20190713 21:31:44.363"></status>
+</kw>
+<doc>This test case is to check registration functionality of application</doc>
+<timeout value="2 minutes 8 seconds"></timeout>
+<status status="PASS" starttime="20190713 21:31:32.005" endtime="20190713 21:31:44.364" critical="yes"></status>
+</test>
+<doc>This file having some test cases of ABC functionality</doc>
+<status status="PASS" starttime="20190713 21:31:31.970" endtime="20190713 21:31:44.368"></status>
+</suite>
+<suite id="s1-s5" name="TC 005 Setup TearDown" source="C:\Users\chirag\PycharmProjects\RobotFramework\TestCases\TC_005_Setup_TearDown.robot">
+<kw name="Before each Test Suite" type="setup">
+<msg timestamp="20190713 21:31:44.500" level="FAIL">No keyword with name 'Before each Test Suite' found.</msg>
+<status status="FAIL" starttime="20190713 21:31:44.499" endtime="20190713 21:31:44.500"></status>
+</kw>
+<test id="s1-s5-t1" name="TC_005 Robot Fifth Test Case">
+<status status="FAIL" starttime="20190713 21:31:44.500" endtime="20190713 21:31:44.501" critical="yes">Parent suite setup failed:
+No keyword with name 'Before each Test Suite' found.</status>
+</test>
+<test id="s1-s5-t2" name="Robot Next Test Case">
+<status status="FAIL" starttime="20190713 21:31:44.503" endtime="20190713 21:31:44.505" critical="yes">Parent suite setup failed:
+No keyword with name 'Before each Test Suite' found.</status>
+</test>
+<kw name="After each Test Suite" type="teardown">
+<msg timestamp="20190713 21:31:44.532" level="FAIL">No keyword with name 'After each Test Suite' found.</msg>
+<status status="FAIL" starttime="20190713 21:31:44.531" endtime="20190713 21:31:44.532">No keyword with name 'After each Test Suite' found.</status>
+</kw>
+<status status="FAIL" starttime="20190713 21:31:44.377" endtime="20190713 21:31:44.532">Suite setup failed:
+No keyword with name 'Before each Test Suite' found.
+
+Also suite teardown failed:
+No keyword with name 'After each Test Suite' found.</status>
+</suite>
+<kw name="After each Test Suite" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Suite Ended</arg>
+</arguments>
+<msg timestamp="20190713 21:31:44.551" level="INFO">Test Suite Ended</msg>
+<status status="PASS" starttime="20190713 21:31:44.550" endtime="20190713 21:31:44.551"></status>
+</kw>
+<status status="PASS" starttime="20190713 21:31:44.549" endtime="20190713 21:31:44.551"></status>
+</kw>
+<status status="FAIL" starttime="20190713 21:30:53.784" endtime="20190713 21:31:44.551"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="6">Critical Tests</stat>
+<stat pass="2" fail="6">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="2">All_TC</stat>
+<stat pass="0" fail="1">DFLT</stat>
+<stat pass="1" fail="0">Regression</stat>
+<stat pass="0" fail="1">Sanity</stat>
+<stat pass="1" fail="1">Smoke</stat>
+</tag>
+<suite>
+<stat pass="2" fail="6" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" id="s1-s1" name="TC 001 Start Close Browser">TestCases.TC 001 Start Close Browser</stat>
+<stat pass="0" fail="1" id="s1-s2" name="TC 002 UDKWithoutArgument">TestCases.TC 002 UDKWithoutArgument</stat>
+<stat pass="1" fail="2" id="s1-s3" name="TC 003 UDKWithArgument">TestCases.TC 003 UDKWithArgument</stat>
+<stat pass="1" fail="0" id="s1-s4" name="TC 004 UDKWithArgument ReturnValue">TestCases.TC 004 UDKWithArgument ReturnValue</stat>
+<stat pass="0" fail="2" id="s1-s5" name="TC 005 Setup TearDown">TestCases.TC 005 Setup TearDown</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190713 21:30:53.750" level="WARN">Error in file 'C:\Users\chirag\PycharmProjects\RobotFramework\TestCases\TC_004_UDKWithArgument_ReturnValue.robot': Invalid syntax in test case 'TC_004 Robot Fourth Test Case': Using custom timeout messages is deprecated since Robot Framework 3.0.1 and will be removed in future versions. Message that was used is 'Failed to Execute Fourth Test Case'.</msg>
+<msg timestamp="20190713 21:31:44.390" level="ERROR">Error in file 'C:\Users\chirag\PycharmProjects\RobotFramework\TestCases\TC_005_Setup_TearDown.robot': Resource file '..\Resources_Keywords\thenpath' does not exist.</msg>
+</errors>
+</robot>
